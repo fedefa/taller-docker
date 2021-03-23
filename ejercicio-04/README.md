@@ -6,7 +6,7 @@ DockerHub link:
 
 ## Build and run
 
-1. `docker build -t fedefarina/password-api:1.0`
+1. `docker build -t fedefarina/password-api:1.0 .`
 2. `docker run -p 8080:8080 -d fedefarina/password-api:1.0`
 3. `curl -i http://localhost:8080/swagger-ui.html` to test it.
 

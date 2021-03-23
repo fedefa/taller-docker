@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  passwordapi-1:
+    image: "fedefarina/password-api:1.0"
+    ports:
+      - 3000:8080
+  passwordapi-2:
+    image: "fedefarina/password-api:1.0"
+    ports:
+      - 3001:8080
+  nginx:
+    build:
+      context: nginx
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    depends_on:
+      - passwordapi-1
+      - passwordapi-2
