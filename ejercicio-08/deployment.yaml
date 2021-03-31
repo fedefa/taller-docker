@@ -21,4 +21,6 @@ spec:
             - containerPort: 80
           envFrom:
             - secretRef:
-                name: telegram-token-secret
+                name: telegram-bot-secrets
+
+

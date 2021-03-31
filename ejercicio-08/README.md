@@ -3,7 +3,7 @@
 ## Build and run
 1. Crear un namespace: `kubectl create namespace ej08`
 2. Apply deployment: `kubectl apply -f deployment.yaml -n ej08`
-3. Apply secret: `kubectl apply -f ./secret.yaml`
+3. Apply secret: `kubectl apply -f ./secret.yaml -n ej08`
 4. Apply service: `kubectl apply -f service.yaml -n ej08`
 5. Luego debo obtener dos cosas:
     - Cluster IP: `minikube ip`
